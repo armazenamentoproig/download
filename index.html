@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Portal</title>
-  <style>
-    body {
-      background-image: url("https://www.w3schools.com/w3images/paper.jpg");
-      background-repeat: repeat;
-      margin: 0;
-    }
-    
-    .rectangle {
-      background-color: #f2f2f2;
-      border: 1px solid #ccc;
-      padding: 20px;
-      text-align: center;
-      width: 300px;
-      height: 100px;
-      margin: 0 auto;
-      margin-top: 100px;
-    }
-    
-    h2 {
-      font-size: 24px;
-      margin-top: 0;
-    }
-    
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="rectangle">
-    <a href="https://drive.google.com/open?id=1kDTX2WY65XwKqMI5PeBXg9Gr3zl2Kik9&usp=drive_copy">
-      <h2>Aluno</h2>
-      <i class="fa fa-file-text-o fa-2x"></i>
-    </a>
-  </div>
-  
-  <div class="rectangle">
-    <a href="https://drive.google.com/open?id=1n3Ul8Y-7SoOTSvbAfzbhwlnnxvCZ2MAo&usp=drive_copy">
-      <h2>Rede de Ensino</h2>
-      <i class="fa fa-file-text-o fa-2x"></i>
-    </a>
-  </div>
-  
-  <div class="rectangle">
-    <a href="https://drive.google.com/open?id=1I5y0jAxnogtJdkzwhOId4JTGz6hRPDnh&usp=drive_copy">
-      <h2>Servidor</h2>
-      <i class="fa fa-file-text-o fa-2x"></i>
-    </a>
-  </div>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portal</title>
+    <style>
+      body {
+        background-color: #F2F2F2;
+      }
+      
+      .rectangle {
+        width: 200px;
+        height: 100px;
+        background: url("https://i.imgur.com/PW4xMqo.jpg") no-repeat center center;
+        background-size: cover;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .rectangle:hover {
+        opacity: 0.8;
+      }
+      
+      #aluno {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rectangle" onclick="location.href='https://drive.google.com/open?id=1kDTX2WY65XwKqMI5PeBXg9Gr3zl2Kik9&usp=drive_copy';">
+      Aluno
+    </div>
+    <div class="rectangle" id="rede" onclick="location.href='https://drive.google.com/open?id=1n3Ul8Y-7SoOTSvbAfzbhwlnnxvCZ2MAo&usp=drive_copy';">
+      Rede de Ensino
+    </div>
+    <div class="rectangle" onclick="location.href='https://drive.google.com/open?id=1I5y0jAxnogtJdkzwhOId4JTGz6hRPDnh&usp=drive_copy';">
+      Servidor
+    </div>
+  </body>
 </html>
