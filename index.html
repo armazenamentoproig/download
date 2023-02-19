@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Portal</title>
+    <title>Meu portal</title>
     <style>
-      body {
-        background-color: #F2F2F2;
+      * {
+        box-sizing: border-box;
       }
       
-     .rectangle {
-  width: 200px;
-  height: 100px;
-  background: #f2f2f2;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: black;
-  text-align: center;
-  cursor: pointer;
-}
-      .rectangle:hover {
-        opacity: 0.8;
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+      
+      .rectangle {
+        width: 300px;
+        height: 250px;
+        margin: 20px;
+        padding: 20px;
+        display: inline-block;
+        text-align: center;
+        font-size: 36px;
+        color: #fff;
+        border-radius: 10px;
+        line-height: 250px;
+        text-decoration: none;
       }
       
       #aluno {
-        margin-top: 50px;
+        background-color: blue;
+      }
+      
+      #rede {
+        background-color: green;
+      }
+      
+      #servidor {
+        background-color: orange;
+      }
+      
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        color: inherit;
       }
     </style>
   </head>
   <body>
-    <div class="rectangle" onclick="location.href='https://drive.google.com/open?id=1kDTX2WY65XwKqMI5PeBXg9Gr3zl2Kik9&usp=drive_copy';">
-      Aluno
+    <div class="rectangle" id="aluno">
+      <a href="https://drive.google.com/open?id=1kDTX2WY65XwKqMI5PeBXg9Gr3zl2Kik9&usp=drive_copy">
+        <h2>Aluno</h2>
+      </a>
     </div>
-    <div class="rectangle" id="rede" onclick="location.href='https://drive.google.com/open?id=1n3Ul8Y-7SoOTSvbAfzbhwlnnxvCZ2MAo&usp=drive_copy';">
-      Rede de Ensino
+    
+    <div class="rectangle" id="rede">
+      <a href="https://drive.google.com/open?id=1n3Ul8Y-7SoOTSvbAfzbhwlnnxvCZ2MAo&usp=drive_copy">
+        <h2>Rede de ensino</h2>
+      </a>
     </div>
-    <div class="rectangle" onclick="location.href='https://drive.google.com/open?id=1I5y0jAxnogtJdkzwhOId4JTGz6hRPDnh&usp=drive_copy';">
-      Servidor
+    
+    <div class="rectangle" id="servidor">
+      <a href="https://drive.google.com/open?id=1I5y0jAxnogtJdkzwhOId4JTGz6hRPDnh&usp=drive_copy">
+        <h2>Servidor</h2>
+      </a>
     </div>
   </body>
 </html>
