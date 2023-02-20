@@ -146,8 +146,10 @@
       }
       
        .container {
-        margin-top: 50px; /* ajuste esse valor conforme necessário */
-      }
+        display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
       .header {
   position: fixed;
   top: 0;
