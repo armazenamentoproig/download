@@ -32,7 +32,7 @@
   line-height: 75px;
   text-decoration: none;
   vertical-align: middle;
-  display: inline-block;
+  display: -webkit-inline-flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -153,9 +153,12 @@
 }
 
       .links {
-  background-color: #f2f2f2;
-  padding: 20px;
+        display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 10px; /* Adiciona uma margem entre os elementos */
 }
+
       .header {
   position: fixed;
   top: 0;
@@ -226,6 +229,7 @@
     <div class="rectangle" id="ano2023">
       <a href="https://docs.google.com/spreadsheets/d/1kd51hVR1XPaP0DPmGbPziKfWb4w2NjzrIffFX6raGKk/edit?usp=sharing" target="_blank">
         <h2>2023</h2>
+      </a>  
     </div>
     <div class="rectangle" id="ambientes-da-rede">
       <a href="https://drive.google.com/open?id=1I5y0jAxnogtJdkzwhOId4JTGz6hRPDnh&usp=drive_copy" target="_blank">
